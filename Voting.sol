@@ -2,7 +2,7 @@
 
 pragma solidity ^0.6.0;
 
-contract Ballot {
+contract Voting {
     //struct qui définit le profil des électeurs
     struct Voter {
         uint weight;
@@ -68,7 +68,7 @@ contract Ballot {
            emit votingCompleted();
         }
     }
-    
+
    function winningProposal() public view returns (uint winningProposal_)
     {
         uint winningVoteCount = 0;
